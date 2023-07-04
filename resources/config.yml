@@ -1,0 +1,12 @@
+local:
+  kafka:
+    brokers: "localhost:29092"
+    topic: "account.transfer.topic"
+    groupId: "canary.deployment.consumer.0"
+    clientId: "canary.deployment.consumer.0"
+stage:
+  kafka:
+    brokers: "${KAFKA_BROKERS}"
+    topic: "account.transfer.topic"
+    groupId: "canary.deployment.consumer.0"
+    clientId: "canary.deployment.consumer.0"
